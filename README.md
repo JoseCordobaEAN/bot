@@ -2,5 +2,5 @@
 Ejemplo Bot usando mongo y python
 
 ## Requisitos
--MongoDB
--PyMongo
+*MongoDB
+*PyMongo
