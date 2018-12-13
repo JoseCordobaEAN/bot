@@ -1,5 +1,6 @@
 from pymongo import MongoClient
 from pprint import pprint
+from random import randint
 
 cliente = MongoClient()
 
@@ -13,7 +14,10 @@ coleccion = base.test
 
 print(coleccion)
 
-elemento = coleccion.find({"name": "jose"})
-for name in elemento:
-    pprint(name)
+
+
+elemento = coleccion.find()
+seleccionado = randint(0, elemento.count()-1)
+print(list(elemento)[seleccionado])
+
 
